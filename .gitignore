@@ -27,3 +27,6 @@ assets/js/dist
 
 # Automation
 posting.sh
+
+# Temp files
+temp
