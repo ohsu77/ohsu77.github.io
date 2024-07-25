@@ -196,6 +196,7 @@ defaults:
       swcache: true
 
 sass:
+  sass_dir: assets/css
   style: compressed
 
 compress_html:
@@ -210,6 +211,8 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
+  - Gemfile
+  - Gemfile.lock
   - docs
   - tools
   - README.md

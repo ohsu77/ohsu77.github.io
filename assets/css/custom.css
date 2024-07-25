@@ -1,0 +1,40 @@
+#sidebar {
+    background-image: url('/assets/img/backgrounds/getaway.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sidebar .site-title a {
+    color: #E1DDDB;
+}
+
+#sidebar #avatar {
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    box-shadow: #0c4a6000 0 0 0 2px;
+    background-image: url('/assets/img/avatar/duke.jpg');
+    background-position-y: center;
+    background-size:cover;
+    transform: translateZ(0);
+}
+
+#sidebar .sidebar-bottom {
+    padding-left: 3.5rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#sidebar a {
+    color: #E1DDDB;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sidebar ul li.nav-item.active .nav-link {
+    /* color: var(--sidebar-active-color); */
+    background-color: #0C4A60;
+}
