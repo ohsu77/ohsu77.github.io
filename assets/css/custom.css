@@ -21,7 +21,7 @@
 }
 
 #sidebar .sidebar-bottom {
-    padding-left: 3.5rem;
+    padding-left: 4.5rem;
     padding-right: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -36,5 +36,10 @@
 
 #sidebar ul li.nav-item.active .nav-link {
     /* color: var(--sidebar-active-color); */
+    background-color: #0C4A60;
+}
+
+#sidebar ul li.nav-item.active .nav-link {
+    color: #E1DDDB;
     background-color: #0C4A60;
 }
