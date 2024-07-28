@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "198. House Robber",
+    "url": "/posts/198.-house-robber/",
+    "categories": "programming, leetcode",
+    "tags": "DP, Dynamic Programming, House Robber",
+    "date": "2024-07-26 13:35:07 -0400",
+    
+
+
+
+
+
+    
+    "snippet": "https://leetcode.com/problems/house-robber/description/.Example  Input: nums = [2,7,9,3,1] Output: 12 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Tota...",
+    "content": "https://leetcode.com/problems/house-robber/description/.Example  Input: nums = [2,7,9,3,1] Output: 12 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.💻 Code1. Brute Force (does not pass all cases)  TC : O(n)  SC: O(n) - stackclass Solution:    def rob(self, nums: List[int]) -&gt; int:        n = len(nums)           res = 0        odd_house = []        even_house = [nums[0]]        for i in range(1, n):            if i % 2 == 1:\t# odd houses                odd_house.append(nums[i])            else:                even_house.append(nums[i])                    res = max(sum(odd_house), sum(even_house))          return res My initial approach to the problem is checking houses to see whether they are odd or even.However, this method can’t handle edge cases. For example, there is a possibility that the sum of indices 0 and 3 can make a maximum amount.2. Dynamic Programming  TC : O(n)  SC: O(n) - DPclass Solution:    def rob(self, nums: List[int]) -&gt; int:        n = len(nums)        if n == 1:            return nums[0]        dp = [0] * n        dp[0] = nums[0]        dp[1] = max(nums[0], nums[1])        for i in range(2, n):            dp[i] = max(dp[i - 1], dp[i - 2] + nums[i])        return dp[-1]Using Dynamic Programming cut the edges where I had a problem. This compares with the current(i - 2) + current(i) and current(i - 1), and the current the maximum value is stored at the current position in dp.By changing the current value, we can see more than the odd &amp; even range that I did earlier.However, since this method stores n length values to dp, the space complexity is O(n).3. Optimal Solution  Inplace shifting  TC : O(n)  SC: O(1)class Solution:    def rob(self, nums: List[int]) -&gt; int:        # [...,  prev, max, curr, ...]        prev_house = 0        max_house = 0                if len(nums) == 1:            return nums[0]        for curr in nums:            temp = max(max_house, prev_house + curr)            prev_house = max_house  # we know, num increment by 1, as well as prev_house            max_house = temp    # change current house as max_house        return max_houseThis is a more efficient way of dealing with the space complexity. There are no other storing variables, such as a stack. It just calculates the current maximum value while it is iterating over all elements.The Key for this method is resetting prev and max points.Additional materials      House Robber II  (The new circumstance is houses are in circle formation)  💡2 cases to be considered  "
+  },
+  
+  {
     "title": "First Post",
     "url": "/posts/first-post/",
     "categories": "etc..",
