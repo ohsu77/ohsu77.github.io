@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Ohsu's Notebook</title>
   <subtitle>Do this all day.</subtitle>
-  <updated>2024-07-28T14:02:20-04:00</updated>
+  <updated>2024-07-30T16:22:24-04:00</updated>
   <author>
     <name>Ohsu Kwon</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,47 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>139. Word Break</title>
+    <link href="http://localhost:4000/posts/139.-word-break/" rel="alternate" type="text/html" title="139. Word Break" />
+    <published>2024-07-30T14:58:50-04:00</published>
+  
+    <updated>2024-07-30T14:58:50-04:00</updated>
+  
+    <id>http://localhost:4000/posts/139.-word-break/</id>
+    <content src="http://localhost:4000/posts/139.-word-break/" />
+    <author>
+      <name>Ohsu Kwon</name>
+    </author>
+
+  
+    
+    <category term="programming" />
+    
+    <category term="leetcode" />
+    
+  
+
+  <summary>url: https://leetcode.com/problems/word-break/description/
+
+Example
+
+
+
+  Input: s = “leetcode”, wordDict = [“leet”,”code”]
+Output: true 
+Explanation: Return true because “leetcode” can be segmented as “leet code”.💡 Note that you are allowed to reuse a dictionary word.
+
+
+💻 Code
+Approach : We only need to iterate s once, and wordDict should be checked at the same time.
+Things to consider :
+
+  Str...</summary>
+
+  </entry>
 
   
   <entry>
@@ -40,7 +81,7 @@
     
   
 
-  <summary>https://leetcode.com/problems/house-robber/description/.
+  <summary>url: https://leetcode.com/problems/house-robber/description/
 
 Example
 
@@ -63,8 +104,7 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 
 
 class Solution:
-    def rob(self, nums: List[int]) -&amp;amp;gt; int:
-   ...</summary>
+    def rob(self, nums: List[int]) -&amp;amp;gt; int:...</summary>
 
   </entry>
 
