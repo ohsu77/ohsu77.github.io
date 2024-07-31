@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Ohsu's Notebook</title>
   <subtitle>Do this all day.</subtitle>
-  <updated>2024-07-30T16:22:24-04:00</updated>
+  <updated>2024-07-30T20:53:17-04:00</updated>
   <author>
     <name>Ohsu Kwon</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>8. String to Integer (atoi)</title>
+    <link href="http://localhost:4000/posts/8.-string-to-integer-(atoi)/" rel="alternate" type="text/html" title="8. String to Integer (atoi)" />
+    <published>2024-07-30T20:23:22-04:00</published>
+  
+    <updated>2024-07-30T20:23:22-04:00</updated>
+  
+    <id>http://localhost:4000/posts/8.-string-to-integer-(atoi)/</id>
+    <content src="http://localhost:4000/posts/8.-string-to-integer-(atoi)/" />
+    <author>
+      <name>Ohsu Kwon</name>
+    </author>
+
+  
+    
+    <category term="programming" />
+    
+    <category term="leetcode" />
+    
+  
+
+  <summary>url: https://leetcode.com/problems/string-to-integer-atoi/description/
+
+Example
+
+
+
+  Input: s = “1337c0d3”
+Output: 1337 
+Explanation:  
+Step 1: “1337c0d3” (no characters read because there is no leading whitespace) 
+Step 2: “1337c0d3” (no characters read because there is neither a ‘-‘ nor ‘+’)
+Step 3: “1337c0d3” (“1337” is read in; reading stops because the next character is a non-digit)
+
+
+💻 Co...</summary>
+
+  </entry>
 
   
   <entry>
@@ -53,9 +93,9 @@ Explanation: Return true because “leetcode” can be segmented as “leet code
 
 💻 Code
 Approach : We only need to iterate s once, and wordDict should be checked at the same time.
-Things to consider :
+Things to be considered :
 
-  Str...</summary>
+...</summary>
 
   </entry>
 
@@ -65,7 +105,7 @@ Things to consider :
     <link href="http://localhost:4000/posts/198.-house-robber/" rel="alternate" type="text/html" title="198. House Robber" />
     <published>2024-07-26T13:35:07-04:00</published>
   
-    <updated>2024-07-26T13:35:07-04:00</updated>
+    <updated>2024-07-30T16:23:52-04:00</updated>
   
     <id>http://localhost:4000/posts/198.-house-robber/</id>
     <content src="http://localhost:4000/posts/198.-house-robber/" />
