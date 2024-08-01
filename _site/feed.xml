@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Ohsu's Notebook</title>
   <subtitle>Do this all day.</subtitle>
-  <updated>2024-08-01T11:59:17-04:00</updated>
+  <updated>2024-08-01T12:37:58-04:00</updated>
   <author>
     <name>Ohsu Kwon</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,49 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>146. LRU Cache</title>
+    <link href="http://localhost:4000/posts/146.-lru-cache/" rel="alternate" type="text/html" title="146. LRU Cache" />
+    <published>2024-08-01T12:02:42-04:00</published>
+  
+    <updated>2024-08-01T12:02:42-04:00</updated>
+  
+    <id>http://localhost:4000/posts/146.-lru-cache/</id>
+    <content src="http://localhost:4000/posts/146.-lru-cache/" />
+    <author>
+      <name>Ohsu Kwon</name>
+    </author>
+
+  
+    
+    <category term="programming" />
+    
+    <category term="leetcode" />
+    
+  
+
+  <summary>url:https://leetcode.com/problems/lru-cache/description/
+
+Example
+
+
+
+
+  Input:  [“LRUCache”, “put”, “put”, “get”, “put”, “get”, “put”, “get”, “get”, “get”]
+[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]  Output:  [null, null, null, 1, null, -1, null, -1, 3, 4]
+
+
+💻 Code
+
+Approach :
+
+  Doubly Linked List helps organizing the order for cache (recently used cache)
+    
+      keep up...</summary>
+
+  </entry>
 
   
   <entry>
@@ -47,7 +90,7 @@ Example
 
 
 
-    &amp;amp;gt; Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] &amp;amp;gt; Output: [3,9,20,null,null,15,7]
+    Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,20,null,null,15,7]
 
 
 💻 Code
@@ -61,7 +104,7 @@ inorder  = [9,  3,  15,  20,  7]
            left        right
 
 
-  preorder...</summary>
+  preorder: increasi...</summary>
 
   </entry>
 
@@ -71,7 +114,7 @@ inorder  = [9,  3,  15,  20,  7]
     <link href="http://localhost:4000/posts/347.-top-k-frequent-elements/" rel="alternate" type="text/html" title="347. Top K Frequent Elements" />
     <published>2024-07-30T21:08:48-04:00</published>
   
-    <updated>2024-07-30T21:08:48-04:00</updated>
+    <updated>2024-08-01T11:59:56-04:00</updated>
   
     <id>http://localhost:4000/posts/347.-top-k-frequent-elements/</id>
     <content src="http://localhost:4000/posts/347.-top-k-frequent-elements/" />
@@ -125,7 +168,7 @@ class Solution:
     <link href="http://localhost:4000/posts/8.-string-to-integer-(atoi)/" rel="alternate" type="text/html" title="8. String to Integer (atoi)" />
     <published>2024-07-30T20:23:22-04:00</published>
   
-    <updated>2024-07-30T20:23:22-04:00</updated>
+    <updated>2024-08-01T11:59:56-04:00</updated>
   
     <id>http://localhost:4000/posts/8.-string-to-integer-(atoi)/</id>
     <content src="http://localhost:4000/posts/8.-string-to-integer-(atoi)/" />
@@ -165,7 +208,7 @@ Step 3: “1337c0d3” (“1337” is read in; reading stops because the next ch
     <link href="http://localhost:4000/posts/139.-word-break/" rel="alternate" type="text/html" title="139. Word Break" />
     <published>2024-07-30T14:58:50-04:00</published>
   
-    <updated>2024-07-30T20:54:45-04:00</updated>
+    <updated>2024-08-01T11:59:56-04:00</updated>
   
     <id>http://localhost:4000/posts/139.-word-break/</id>
     <content src="http://localhost:4000/posts/139.-word-break/" />
@@ -197,55 +240,6 @@ Approach : We only need to iterate s once, and wordDict should be checked at the
 Things to be considered :
 
 ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>198. House Robber</title>
-    <link href="http://localhost:4000/posts/198.-house-robber/" rel="alternate" type="text/html" title="198. House Robber" />
-    <published>2024-07-26T13:35:07-04:00</published>
-  
-    <updated>2024-07-30T16:23:52-04:00</updated>
-  
-    <id>http://localhost:4000/posts/198.-house-robber/</id>
-    <content src="http://localhost:4000/posts/198.-house-robber/" />
-    <author>
-      <name>Ohsu Kwon</name>
-    </author>
-
-  
-    
-    <category term="programming" />
-    
-    <category term="leetcode" />
-    
-  
-
-  <summary>url: https://leetcode.com/problems/house-robber/description/
-
-Example
-
-
-
-  Input: nums = [2,7,9,3,1] 
-Output: 12 
-Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). 
-Total amount you can rob = 2 + 9 + 1 = 12.
-
-
-💻 Code
-
-1. Brute Force (does not pass all cases)
-
-
-
-  TC : O(n)
-  SC: O(n) - stack
-
-
-class Solution:
-    def rob(self, nums: List[int]) -&amp;amp;gt; int:...</summary>
 
   </entry>
 
