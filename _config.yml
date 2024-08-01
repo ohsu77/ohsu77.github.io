@@ -170,6 +170,11 @@ kramdown:
       line_numbers: true
       start_line: 1
 
+math:
+  provider: mathjax
+  mathjax:
+    version: '3.2.0'
+
 collections:
   tabs:
     output: true

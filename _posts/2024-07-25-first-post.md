@@ -3,6 +3,7 @@ title: "First Post"
 date: 2024-07-25 15:29:28 -0400
 categories: [etc..]
 tags: [etc]     # TAG names should always be lowercase
+math: true
 ---
 
 ### Hi,
