@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Ohsu's Notebook</title>
   <subtitle>Do this all day.</subtitle>
-  <updated>2024-08-01T23:27:19-04:00</updated>
+  <updated>2024-08-02T00:06:39-04:00</updated>
   <author>
     <name>Ohsu Kwon</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,56 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>230. Kth Smallest Element in a BST</title>
+    <link href="http://localhost:4000/posts/230.-kth-smallest-element-in-a-bst/" rel="alternate" type="text/html" title="230. Kth Smallest Element in a BST" />
+    <published>2024-08-01T23:41:33-04:00</published>
+  
+    <updated>2024-08-01T23:41:33-04:00</updated>
+  
+    <id>http://localhost:4000/posts/230.-kth-smallest-element-in-a-bst/</id>
+    <content src="http://localhost:4000/posts/230.-kth-smallest-element-in-a-bst/" />
+    <author>
+      <name>Ohsu Kwon</name>
+    </author>
+
+  
+    
+    <category term="programming" />
+    
+    <category term="leetcode" />
+    
+  
+
+  <summary>url: https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+
+
+    Input: root = [5,3,6,2,4,null,null,1], k = 3 Output: 3
+
+
+💻 Code
+
+Approach :
+
+  In the binary tree, inorder counts elements as increasing sequence.
+
+
+1. Iteration Inorder
+
+  TC: $O(h + k)$
+    
+      $h$: height
+    
+  
+  SC: $O(n)$
+
+
+class Solution:
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -&amp;amp;g...</summary>
+
+  </entry>
 
   
   <entry>
@@ -199,46 +249,6 @@ Approach : Count each number using hash, then prioritize for k number of element
 
 class Solution:
     def topKFrequent(s...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>8. String to Integer (atoi)</title>
-    <link href="http://localhost:4000/posts/8.-string-to-integer-(atoi)/" rel="alternate" type="text/html" title="8. String to Integer (atoi)" />
-    <published>2024-07-30T20:23:22-04:00</published>
-  
-    <updated>2024-08-01T11:59:56-04:00</updated>
-  
-    <id>http://localhost:4000/posts/8.-string-to-integer-(atoi)/</id>
-    <content src="http://localhost:4000/posts/8.-string-to-integer-(atoi)/" />
-    <author>
-      <name>Ohsu Kwon</name>
-    </author>
-
-  
-    
-    <category term="programming" />
-    
-    <category term="leetcode" />
-    
-  
-
-  <summary>url: https://leetcode.com/problems/string-to-integer-atoi/description/
-
-Example
-
-
-
-  Input: s = “1337c0d3”
-Output: 1337 
-Explanation:  
-Step 1: “1337c0d3” (no characters read because there is no leading whitespace) 
-Step 2: “1337c0d3” (no characters read because there is neither a ‘-‘ nor ‘+’)
-Step 3: “1337c0d3” (“1337” is read in; reading stops because the next character is a non-digit)
-
-
-💻 Co...</summary>
 
   </entry>
 
