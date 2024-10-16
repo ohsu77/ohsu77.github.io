@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "713. Subarray Product Less Than k",
+    "url": "/posts/713.-subarray-product-less-than-k/",
+    "categories": "programming, leetcode, medium",
+    "tags": "sliding window",
+    "date": "2024-10-14 15:04:28 -0400",
+    
+
+
+
+
+
+    
+    "snippet": "url: https://leetcode.com/problems/subarray-product-less-than-k/description/  Input: nums = [10, 5, 2, 6], k = 100 Output: 8Explanation:   [10]  [5]  [2]  [6]  [10, 5] = 50  [5, 2] = 10  [2, 6] = 1...",
+    "content": "url: https://leetcode.com/problems/subarray-product-less-than-k/description/  Input: nums = [10, 5, 2, 6], k = 100 Output: 8Explanation:   [10]  [5]  [2]  [6]  [10, 5] = 50  [5, 2] = 10  [2, 6] = 12  [5, 2, 6] = 60Note that [10, 5, 2] is not included as the product of 100 is not strictly less than k.💻 Code1. SolutionSliding Window  TC: $O(n)$  SC: $O(1)$class Solution:    def numSubarrayProductLessThanK(self, nums: List[int], k: int) -&gt; int:        ans = 0        left = 0 # left starts from the index 0        prod = 1        # slide the window with conditions        for right, num in enumerate(nums):            prod *= num            # if product of current window larget than k            if prod &gt;= k and left &lt;= right:                # move the left pointer!                prod //= nums[left]                left += 1            # current window less than k            ans += right - left + 1        return ansIn this solution, two pointers (left &amp; right) are needed to set the window up, and it allows us to apply conditions as needed. For the right pointer, it will access the next index if the product of the current window satisfies the condition, which is less than K. In other words, the left pointer will be moved if it is larger than K to shrink and find the appropriate window.  The Most important thing in this logic is to count the valid number of subarrays using right - left + 1 so that we don’t have to go over the subarray to find a valid combination within the window again.Let’s think simple! If the window is valid, its subarrays are already verified to meet the condition.  Why +1 ?  Since we extends the right pointer, we should also calculate the new right pointer num itself!"
+  },
+  
+  {
+    "title": "56. Merge Intervals",
+    "url": "/posts/56.-merge-intervals/",
+    "categories": "programming, leetcode",
+    "tags": "merge sort, lambda",
+    "date": "2024-08-11 11:57:17 -0400",
+    
+
+
+
+
+
+    
+    "snippet": "url: https://leetcode.com/problems/merge-intervals/description/  Input: intervals = [[1,3],[2,6],[8,10],[15,18]]  Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlap...",
+    "content": "url: https://leetcode.com/problems/merge-intervals/description/  Input: intervals = [[1,3],[2,6],[8,10],[15,18]]  Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].💻 CodeApproach :  There are two cases to be considered:          Overlapping intervals $\\rightarrow$ merge them to make a single interval      No overlapping intervals $\\rightarrow$ present themselves as it was        Sort on the first element of each interval1. Solution  TC: $O(n \\log n)$          sorted(): $O(n \\log n)$      iteration: $O(n)$        SC: $O(n)$class Solution:    def merge(self, intervals: List[List[int]]) -&gt; List[List[int]]:        # sort based on the starting point of each interval        sorted_intervals = sorted(intervals)        merged = []        for interval in sorted_intervals:            # cases: starting interval or not overlapping            if not merged or merged[-1][1] &lt; interval[0]:                merged.append(interval)            # when overlapping, merge them!            else:                merged[-1][1] = max(merged[-1][1], interval[1])        return merged  There are only 2 cases to be considered, whether intervals are overlapping or not. Thus, focusing on the overlapping part is the key to solving this problem. The method checks between the ending part of the existing interval and the starting part of the incoming part.There is another way to sort the input using lambda instead of sorted().sorted_intervals = intervals.sort(key=lambda x: x[0])This allows us to choose sorting intervals based on the starting position. Thus, we can use this flexibly.2. Additional Practice252. Meeting Rooms253. Meeting Rooms II"
+  },
+  
+  {
     "title": "230. Kth Smallest Element in a BST",
     "url": "/posts/230.-kth-smallest-element-in-a-bst/",
     "categories": "programming, leetcode",
