@@ -1,3 +1,9 @@
 [submodule "assets/lib"]
 	path = assets/lib
 	url = https://github.com/cotes2020/chirpy-static-assets.git
+[submodule "themes.template"]
+	path = themes.template
+	url = https://github.com/cotes2020/jekyll-theme-chirpy.git
+[submodule "themes/template"]
+	path = themes/template
+	url = https://github.com/cotes2020/jekyll-theme-chirpy.git
