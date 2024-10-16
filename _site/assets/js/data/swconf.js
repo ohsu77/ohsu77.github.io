@@ -15,7 +15,7 @@ const swconf = {
 
       
       
-        // '/assets/js/dist/app.min.js',
+        '/assets/js/dist/app.min.js',
         '/assets/js/dist/categories.min.js',
         '/assets/js/dist/commons.min.js',
         '/assets/js/dist/home.min.js',
