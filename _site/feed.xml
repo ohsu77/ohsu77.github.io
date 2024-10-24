@@ -1,18 +1,18 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://ohsu77.github.io/</id>
+  <id>http://localhost:4000/</id>
   <title>Ohsu's Notebook</title>
   <subtitle>Do this all day.</subtitle>
-  <updated>2024-10-16T16:56:46-04:00</updated>
+  <updated>2024-10-24T13:44:00-04:00</updated>
   <author>
     <name>Ohsu Kwon</name>
-    <uri>https://ohsu77.github.io/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://ohsu77.github.io/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://ohsu77.github.io/"/>
-  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
   <rights> © 2024 Ohsu Kwon </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>713. Subarray Product Less Than k</title>
-    <link href="https://ohsu77.github.io/posts/713.-subarray-product-less-than-k/" rel="alternate" type="text/html" title="713. Subarray Product Less Than k" />
+    <link href="http://localhost:4000/posts/713.-subarray-product-less-than-k/" rel="alternate" type="text/html" title="713. Subarray Product Less Than k" />
     <published>2024-10-14T15:04:28-04:00</published>
   
     <updated>2024-10-14T15:04:28-04:00</updated>
   
-    <id>https://ohsu77.github.io/posts/713.-subarray-product-less-than-k/</id>
-    <content src="https://ohsu77.github.io/posts/713.-subarray-product-less-than-k/" />
+    <id>http://localhost:4000/posts/713.-subarray-product-less-than-k/</id>
+    <content src="http://localhost:4000/posts/713.-subarray-product-less-than-k/" />
     <author>
       <name>Ohsu Kwon</name>
     </author>
@@ -75,13 +75,13 @@ class Solution:...</summary>
   
   <entry>
     <title>56. Merge Intervals</title>
-    <link href="https://ohsu77.github.io/posts/56.-merge-intervals/" rel="alternate" type="text/html" title="56. Merge Intervals" />
+    <link href="http://localhost:4000/posts/56.-merge-intervals/" rel="alternate" type="text/html" title="56. Merge Intervals" />
     <published>2024-08-11T11:57:17-04:00</published>
   
     <updated>2024-08-11T11:57:17-04:00</updated>
   
-    <id>https://ohsu77.github.io/posts/56.-merge-intervals/</id>
-    <content src="https://ohsu77.github.io/posts/56.-merge-intervals/" />
+    <id>http://localhost:4000/posts/56.-merge-intervals/</id>
+    <content src="http://localhost:4000/posts/56.-merge-intervals/" />
     <author>
       <name>Ohsu Kwon</name>
     </author>
@@ -114,13 +114,13 @@ Approach :
   
   <entry>
     <title>230. Kth Smallest Element in a BST</title>
-    <link href="https://ohsu77.github.io/posts/230.-kth-smallest-element-in-a-bst/" rel="alternate" type="text/html" title="230. Kth Smallest Element in a BST" />
+    <link href="http://localhost:4000/posts/230.-kth-smallest-element-in-a-bst/" rel="alternate" type="text/html" title="230. Kth Smallest Element in a BST" />
     <published>2024-08-01T23:41:33-04:00</published>
   
     <updated>2024-08-01T23:41:33-04:00</updated>
   
-    <id>https://ohsu77.github.io/posts/230.-kth-smallest-element-in-a-bst/</id>
-    <content src="https://ohsu77.github.io/posts/230.-kth-smallest-element-in-a-bst/" />
+    <id>http://localhost:4000/posts/230.-kth-smallest-element-in-a-bst/</id>
+    <content src="http://localhost:4000/posts/230.-kth-smallest-element-in-a-bst/" />
     <author>
       <name>Ohsu Kwon</name>
     </author>
@@ -164,13 +164,13 @@ class Solution:
   
   <entry>
     <title>2302. Count Subarrays With Score Less Than K</title>
-    <link href="https://ohsu77.github.io/posts/2302.-count-subarrays-with-score-less-than-k/" rel="alternate" type="text/html" title="2302. Count Subarrays With Score Less Than K" />
+    <link href="http://localhost:4000/posts/2302.-count-subarrays-with-score-less-than-k/" rel="alternate" type="text/html" title="2302. Count Subarrays With Score Less Than K" />
     <published>2024-08-01T12:40:29-04:00</published>
   
     <updated>2024-08-02T00:08:20-04:00</updated>
   
-    <id>https://ohsu77.github.io/posts/2302.-count-subarrays-with-score-less-than-k/</id>
-    <content src="https://ohsu77.github.io/posts/2302.-count-subarrays-with-score-less-than-k/" />
+    <id>http://localhost:4000/posts/2302.-count-subarrays-with-score-less-than-k/</id>
+    <content src="http://localhost:4000/posts/2302.-count-subarrays-with-score-less-than-k/" />
     <author>
       <name>Ohsu Kwon</name>
     </author>
@@ -204,13 +204,13 @@ The 6 subarrays having scores less than 10 are:
   
   <entry>
     <title>146. LRU Cache</title>
-    <link href="https://ohsu77.github.io/posts/146.-lru-cache/" rel="alternate" type="text/html" title="146. LRU Cache" />
+    <link href="http://localhost:4000/posts/146.-lru-cache/" rel="alternate" type="text/html" title="146. LRU Cache" />
     <published>2024-08-01T12:02:42-04:00</published>
   
     <updated>2024-08-01T12:02:42-04:00</updated>
   
-    <id>https://ohsu77.github.io/posts/146.-lru-cache/</id>
-    <content src="https://ohsu77.github.io/posts/146.-lru-cache/" />
+    <id>http://localhost:4000/posts/146.-lru-cache/</id>
+    <content src="http://localhost:4000/posts/146.-lru-cache/" />
     <author>
       <name>Ohsu Kwon</name>
     </author>

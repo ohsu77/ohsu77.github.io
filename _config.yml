@@ -135,8 +135,8 @@ comments:
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
-  js:
-    - /assets/js/dist/app.min.js
+  # js:
+  #   - /assets/js/dist/app.min.js
   self_host:
     enabled: # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
