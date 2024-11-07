@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "143. Reorder List",
+    "url": "/posts/143.-reorder-list/",
+    "categories": "programming, leetcode, medium",
+    "tags": "singly linked list, fast and slow",
+    "date": "2024-11-07 13:27:15 -0500",
+    
+
+
+
+
+
+    
+    "snippet": "url: https://leetcode.com/problems/reorder-list/description/  Input: head = [1,2,3,4,5,6]  Output: [1,6,2,5,3,4]      1   -&gt;  2   -&gt;  3   -&gt;  4   -&gt;  5   -&gt;  6    -&gt;  null=&gt; 1 ...",
+    "content": "url: https://leetcode.com/problems/reorder-list/description/  Input: head = [1,2,3,4,5,6]  Output: [1,6,2,5,3,4]      1   -&gt;  2   -&gt;  3   -&gt;  4   -&gt;  5   -&gt;  6    -&gt;  null=&gt; 1   -&gt;  6   -&gt;  2   -&gt;  5   -&gt;  3   -&gt;  4    -&gt;  null  📝 SolutionApproachTo solve the problem 143. Reorder List, we need to identify a pattern that simplifies the solution. In essence, we need to reorder the list by alternately placing the first and last elements until we reach the middle. Strategy:  Find the middle and split the LL           To reorder the list, we first need to find the middle to divide it into two separate parts. The challenge here is finding the middle node efficiently in a singly linked list. A brute-force approach would involve iterating through all nodes to count them, then traversing again from the head to reach the middle, but this is inefficient.Using the fast &amp; slow pointer algorithm, allows us to locate the middle in a single pass.                  This approach not only finds the middle efficiently but is also commonly used to detect cycles in a linked list. (a.k.a 🐰 &amp; 🐢)                        # set pointers at the start line fast = slow = head # edge case: odd or even length? while fast and fast.next:     slow = slow.next     fast = fast.next.next        We need to check if the linked list length is odd or even. This is why we use fast and fast.next in the while condition.    Reverse the rear LL          By creating null node at the beggining, we can reverse the direction.           null          4   -&gt;  5   -&gt;  6   -&gt;  null   null    &lt;-    4       5   -&gt;  6   -&gt;  null   null    &lt;-    4   &lt;-  5       6   -&gt;  null   null    &lt;-    4   &lt;-  5   &lt;-  6       null                To implement this logic, we use three pointers:                    prev: Points to the previous node, starting from null.      curr: Points to the current node that we want to redirect.      temp: pointing  he next node of curr to proceed with the next redirecting         prev = None curr = slow # `slow` is the middle from step 1 while curr:  temp = curr.next  curr.next = prev  prev = curr  curr = temp                      Merge LLs          At the beginning of this stage, we have two linked lists., so we need to merge them into a single LL.          1   -&gt;  2   -&gt;  3   -&gt;  null 6   -&gt;  5   -&gt;  4   -&gt;  null =&gt; 1   -&gt;  6   -&gt;  2   -&gt;  5   -&gt;  3   -&gt;  4    -&gt;  null         first = head second = prev   #prev stopped at the last element from step 2 while second.next:     first.next, first = second, first.next     second.next, second = first, second.next      💻 Codeclass Solution:    def reorderList(self, head: Optional[ListNode]) -&gt; None:        # set pointers at the start line        fast = slow = head        # edge case: odd or even length?        while fast and fast.next:            slow = slow.next            fast = fast.next.next        prev = None        curr = slow # slow is the middle from step 1        while curr:            temp = curr.next            curr.next = prev            prev = curr            curr = temp        first = head        second = prev   #`prev` stopped at the last element from step 2        while second.next:            first.next, first = second, first.next            second.next, second = first, second.next"
+  },
+  
+  {
     "title": "713. Subarray Product Less Than k",
     "url": "/posts/713.-subarray-product-less-than-k/",
     "categories": "programming, leetcode, medium",
@@ -20,8 +37,8 @@
   {
     "title": "56. Merge Intervals",
     "url": "/posts/56.-merge-intervals/",
-    "categories": "programming, leetcode",
-    "tags": "merge sort, lambda",
+    "categories": "programming, leetcode, medium",
+    "tags": "merge sort, lambda function",
     "date": "2024-08-11 11:57:17 -0400",
     
 
@@ -37,7 +54,7 @@
   {
     "title": "230. Kth Smallest Element in a BST",
     "url": "/posts/230.-kth-smallest-element-in-a-bst/",
-    "categories": "programming, leetcode",
+    "categories": "programming, leetcode, medium",
     "tags": "binary tree, inorder",
     "date": "2024-08-01 23:41:33 -0400",
     
@@ -54,7 +71,7 @@
   {
     "title": "2302. Count Subarrays With Score Less Than K",
     "url": "/posts/2302.-count-subarrays-with-score-less-than-k/",
-    "categories": "programming, leetcode",
+    "categories": "programming, leetcode, hard",
     "tags": "sliding window, amortized analysis",
     "date": "2024-08-01 12:40:29 -0400",
     
@@ -71,7 +88,7 @@
   {
     "title": "146. LRU Cache",
     "url": "/posts/146.-lru-cache/",
-    "categories": "programming, leetcode",
+    "categories": "programming, leetcode, medium",
     "tags": "doubly linked list, lru cache",
     "date": "2024-08-01 12:02:42 -0400",
     
@@ -88,7 +105,7 @@
   {
     "title": "105. Construct Binary Tree from Preorder and Inorder Traversal",
     "url": "/posts/105.-construct-binary-tree-from-preorder-and-inorder-traversal/",
-    "categories": "programming, leetcode",
+    "categories": "programming, leetcode, medium",
     "tags": "hash map, inorder, preorder, tree",
     "date": "2024-07-31 14:19:24 -0400",
     
@@ -105,7 +122,7 @@
   {
     "title": "347. Top K Frequent Elements",
     "url": "/posts/347.-top-k-frequent-elements/",
-    "categories": "programming, leetcode",
+    "categories": "programming, leetcode, medium",
     "tags": "hash map, priority queue, heap, bucket sort",
     "date": "2024-07-30 21:08:48 -0400",
     
@@ -122,7 +139,7 @@
   {
     "title": "8. String to Integer (atoi)",
     "url": "/posts/8.-string-to-integer-(atoi)/",
-    "categories": "programming, leetcode",
+    "categories": "programming, leetcode, medium",
     "tags": "tag",
     "date": "2024-07-30 20:23:22 -0400",
     
@@ -139,7 +156,7 @@
   {
     "title": "139. Word Break",
     "url": "/posts/139.-word-break/",
-    "categories": "programming, leetcode",
+    "categories": "programming, leetcode, medium",
     "tags": "dp, dfs",
     "date": "2024-07-30 14:58:50 -0400",
     
@@ -156,8 +173,8 @@
   {
     "title": "198. House Robber",
     "url": "/posts/198.-house-robber/",
-    "categories": "programming, leetcode",
-    "tags": "DP, Dynamic Programming, House Robber",
+    "categories": "programming, leetcode, medium",
+    "tags": "dp, house robber",
     "date": "2024-07-26 13:35:07 -0400",
     
 
